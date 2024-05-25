@@ -30,6 +30,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 };
 
+const uint16_t PROGMEM combo_tab[] = {LSFT_T(KC_D), LCTL_T(KC_F), COMBO_END};
+const uint16_t PROGMEM combo_gui_d[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM combo_alt_tab[] = {KC_E, KC_R, COMBO_END};
+combo_t key_combos[] = {
+    COMBO(combo_tab, KC_TAB),
+    COMBO(combo_gui_d, LGUI(KC_D)),
+    COMBO(combo_alt_tab, LALT(KC_TAB)),
+};
+
 // clang-format off
 
 /* Layout
