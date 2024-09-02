@@ -70,7 +70,7 @@ combo_t key_combos[] = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_5x6_54(
     MO(MEDIA),       KC_1,            KC_2,            KC_3,            KC_4,            KC_5,                                                       KC_6,            KC_7,            KC_8,            KC_9,            KC_0,            KC_PSCR,
-    KC_TAB,          KC_Q,            KC_W,            KC_E,            KC_R,            KC_T,                                                       KC_Y,            KC_U,            KC_I,            KC_O,            KC_P,            KC_INSERT,
+    KC_LALT,         KC_Q,            KC_W,            KC_E,            KC_R,            KC_T,                                                       KC_Y,            KC_U,            KC_I,            KC_O,            KC_P,            KC_INSERT,
     KC_LSFT,         LALT_T(KC_A),    LGUI_T(KC_S),    LSFT_T(KC_D),    LCTL_T(KC_F),    KC_G,                                                       KC_H,            LCTL_T(KC_J),    LSFT_T(KC_K),    LGUI_T(KC_L),    LALT_T(KC_SCLN), KC_QUOT,
     KC_LCTL,         KC_Z,            KC_X,            KC_C,            KC_V,            KC_B,                                                       KC_N,            KC_M,            KC_COMM,         KC_DOT,          KC_SLSH,         KC_RCTL,
                                                                         LT(NAV, KC_TAB), LT(SYM, KC_SPC), LT(MOUSE, KC_ESC),      LT(MOUSE, KC_ENT), LT(SYM, KC_BSPC),  LT(NAV, KC_DEL)
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [NAV] = LAYOUT_5x6_54(
     _______,         LGUI(KC_1),      LGUI(KC_2),      LGUI(KC_3),      LGUI(KC_4),      LGUI(KC_5),                                                 LGUI(KC_6),      LGUI(KC_7),      LGUI(KC_8),      LGUI(KC_9),      LGUI(KC_0),      KC_PAUSE,
-    _______,         _______,         OSM(MOD_LCTL | MOD_LALT), OSM(MOD_LALT), OSM(MOD_LCTL | MOD_LSFT),  _______,                                   _______,         KC_PGUP,         KC_HOME,         _______,         _______,         _______,
+    _______,         _______,         OSM(MOD_LALT | MOD_LSFT), OSM(MOD_LALT | MOD_LCTL), OSM(MOD_LALT),  _______,                                   _______,         KC_PGUP,         KC_HOME,         _______,         _______,         _______,
     _______,         KC_LALT,         KC_LGUI,         KC_LSFT,         KC_LCTL,         _______,                                                    KC_LEFT,         KC_DOWN,         KC_UP,           KC_RGHT,         _______,         _______,
     _______,         ALT_SHIFT,       _______,         KC_F11,          KC_F12,          _______,                                                    _______,         KC_PGDN,         KC_END,          _______,         CW_TOGG,         _______,
                                                                         KC_TAB,          KC_SPC,          KC_ESC,                 KC_ENT,            KC_BSPC,         KC_DEL
@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [MOUSE] = LAYOUT_5x6_54(
     _______,         LGUI(KC_1),      LGUI(KC_2),      LGUI(KC_3),      LGUI(KC_4),      LGUI(KC_5),                                                 LGUI(KC_6),      LGUI(KC_7),      LGUI(KC_8),      LGUI(KC_9),      LGUI(KC_0),      QK_BOOT,
-    _______,         _______,         KC_VOLD,         KC_VOLU,         KC_MUTE,         U_RDO,                                                      _______,         KC_WH_U,         KC_MS_U,         _______,         _______,         _______,
+    QK_BOOT,         _______,         KC_VOLD,         KC_VOLU,         KC_MUTE,         U_RDO,                                                      _______,         KC_WH_U,         KC_MS_U,         _______,         _______,         _______,
     _______,         KC_LALT,         KC_LGUI,         KC_LSFT,         KC_LCTL,         U_UND,                                                      KC_MS_L,         KC_MS_L,         KC_MS_D,         KC_MS_R,         _______,         _______,
     _______,         ALT_SHIFT,       KC_MPLY,         KC_MPRV,         KC_MNXT,         _______,                                                    _______,         KC_WH_D,         _______,         _______,         CW_TOGG,         _______,
                                                                         KC_TAB,          KC_SPC,          KC_ESC,                 KC_BTN2,           KC_BTN1,         KC_BTN3
