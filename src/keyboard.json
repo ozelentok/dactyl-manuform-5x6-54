@@ -36,11 +36,28 @@
         "nkro": true,
         "backlight": false,
         "rgb_matrix": false,
-        "rgblight": false,
+        "rgblight": true,
         "audio": false
+    },
+    "build": {
+        "lto": true
     },
     "caps_word": {
         "enabled": true
+    },
+    "ws2812": {
+        "pin": "F5"
+    },
+    "rgblight": {
+        "led_count": 1,
+        "layers": {
+            "enabled": true,
+            "max": 4
+        },
+        "sleep": true,
+        "default": {
+          "val": 0
+        }
     },
     "layouts": {
         "LAYOUT_5x6_54": {
