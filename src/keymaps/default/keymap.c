@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LALT,         KC_Q,            KC_W,            KC_E,            KC_R,            KC_T,                                                       KC_Y,            KC_U,            KC_I,            KC_O,            KC_P,            KC_INSERT,
     KC_LSFT,         LALT_T(KC_A),    LGUI_T(KC_S),    LSFT_T(KC_D),    LCTL_T(KC_F),    KC_G,                                                       KC_H,            LCTL_T(KC_J),    LSFT_T(KC_K),    LGUI_T(KC_L),    LALT_T(KC_SCLN), KC_QUOT,
     KC_LCTL,         KC_Z,            KC_X,            KC_C,            KC_V,            KC_B,                                                       KC_N,            KC_M,            KC_COMM,         KC_DOT,          KC_SLSH,         KC_RCTL,
-                                                                        LT(NAV, KC_TAB), LT(SYM, KC_SPC), LT(MOUSE, KC_ESC),      LT(MOUSE, KC_ENT), LT(SYM, KC_BSPC),  LT(NAV, KC_DEL)
+                                                                        LT(NAV, KC_MINS),LT(SYM, KC_SPC), LT(MOUSE, KC_ESC),      LT(MOUSE, KC_ENT), LT(SYM, KC_BSPC),  LT(NAV, KC_DEL)
   ),
 
   [NAV] = LAYOUT_5x6_54(
@@ -132,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_T,            KC_TAB,          KC_Q,            KC_W,            KC_E,            KC_R,                                                       _______,         _______,         _______,         _______,         _______,         _______,
     KC_G,            KC_LSFT,         KC_A,            KC_S,            KC_D,            KC_F,                                                       _______,         _______,         _______,         _______,         _______,         _______,
     KC_B,            KC_LCTL,         KC_Z,            KC_X,            KC_C,            KC_V,                                                       _______,         _______,         _______,         _______,         _______,         _______,
-                                                                        KC_LGUI,         KC_SPC,          LALT_T(KC_ESC),         _______,           _______,         _______
+                                                                        KC_LGUI,         KC_SPC,          KC_ESC,                 _______,           _______,         _______
   ),
 
   [MEDIA] = LAYOUT_5x6_54(
