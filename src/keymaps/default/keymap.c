@@ -113,10 +113,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [MOUSE] = LAYOUT_5x6_54(
     _______,         LGUI(KC_1),      LGUI(KC_2),      LGUI(KC_3),      LGUI(KC_4),      LGUI(KC_5),                                                 LGUI(KC_6),      LGUI(KC_7),      LGUI(KC_8),      LGUI(KC_9),      LGUI(KC_0),      QK_BOOT,
-    QK_BOOT,         _______,         KC_VOLD,         KC_VOLU,         KC_MUTE,         U_RDO,                                                      _______,         KC_WH_U,         KC_MS_U,         _______,         _______,         _______,
-    _______,         KC_LALT,         KC_LGUI,         KC_LSFT,         KC_LCTL,         U_UND,                                                      KC_MS_L,         KC_MS_L,         KC_MS_D,         KC_MS_R,         _______,         _______,
-    _______,         ALT_SHIFT,       KC_MPLY,         KC_MPRV,         KC_MNXT,         _______,                                                    _______,         KC_WH_D,         _______,         _______,         CW_TOGG,         _______,
-                                                                        KC_TAB,          KC_SPC,          KC_ESC,                 KC_BTN2,           KC_BTN1,         KC_BTN3
+    QK_BOOT,         _______,         KC_VOLD,         KC_VOLU,         KC_MUTE,         U_RDO,                                                      _______,         MS_WHLU,         MS_UP,           _______,         _______,         _______,
+    _______,         KC_LALT,         KC_LGUI,         KC_LSFT,         KC_LCTL,         U_UND,                                                      MS_LEFT,         MS_LEFT,         MS_DOWN,         MS_RGHT,         _______,         _______,
+    _______,         ALT_SHIFT,       KC_MPLY,         KC_MPRV,         KC_MNXT,         _______,                                                    _______,         MS_WHLD,         _______,         _______,         CW_TOGG,         _______,
+                                                                        KC_TAB,          KC_SPC,          KC_ESC,                 MS_BTN2,           MS_BTN1,         MS_BTN3
   ),
 
   [GAME] = LAYOUT_5x6_54(
